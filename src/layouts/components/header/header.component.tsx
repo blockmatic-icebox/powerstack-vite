@@ -7,6 +7,8 @@ export function Header() {
         <Link to="/">VITE PROJECT</Link>
 
         <nav className="flex justify-end pt-1 gap-x-4 h-30">
+          <span onClick={() => console.log('login')}>Login</span>
+
           <Link to="/">Home</Link>
 
           <Link to="/about">About</Link>
