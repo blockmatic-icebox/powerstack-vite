@@ -2,7 +2,7 @@ import { w } from 'windstitch'
 
 import { cn } from '~/lib/styles'
 
-import { ButtonProps } from './button.type'
+import { type ButtonProps } from './button.type'
 
 export function Button({ label, ...props }: ButtonProps) {
   return <ButtonVariants {...props}>{label || props.children}</ButtonVariants>

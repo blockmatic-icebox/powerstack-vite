@@ -1,6 +1,6 @@
-import { W } from 'windstitch'
+import { type W } from 'windstitch'
 
-import { ButtonVariants } from './button.component'
+import { type ButtonVariants } from './button.component'
 
 export type ButtonProps = React.ComponentProps<'button'> &
   ButtonVariantsProps & {

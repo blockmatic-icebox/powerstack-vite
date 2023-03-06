@@ -1,9 +1,7 @@
-import jwtDecode from 'jwt-decode'
-
 import { fetchJson } from '~/lib/fetch'
 import { logger } from '~/lib/logger'
 
-import { AuthResponse, CreateSessionParams } from './auth.types'
+import type { AuthResponse, CreateSessionParams } from './auth.types'
 
 export async function login(login_payload: CreateSessionParams) {
   logger.log('🍪 create cookie session', JSON.stringify(login_payload))
@@ -14,7 +12,7 @@ export async function login(login_payload: CreateSessionParams) {
   })
   logger.log('🍪 cookie session created!')
 
-  if (error != null || data == null) throw error != null || 'Unauthorized access.'
+  if (error != null || data == null) throw new Error(error?.message || 'Unauthorized access.')
 
   return data
 }

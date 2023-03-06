@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\" \"!src/graphql/generated\"",
-    "lint": "eslint --fix --ignore-path .gitignore",
+    "lint": "eslint --ignore-path .gitignore \"**/*.+(js|ts|tsx)\"",
     "graphql": "genql --sort --endpoint https://api.powerstack.xyz/v1/graphql -H 'x-chaingraph-api-key: e33ac4f9-2a45-478a-95b4-ac4d1dc8f25b' --output ./src/graphql/generated"
   },
   "dependencies": {

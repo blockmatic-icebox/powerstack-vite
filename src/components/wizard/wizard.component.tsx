@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { WizardProps } from './wizard.type'
+import { type WizardProps } from './wizard.type'
 
 export function Wizard({ error, steps }: WizardProps) {
   const [step, setStep] = useState<string>(steps[0].name)
@@ -26,7 +26,9 @@ export function Wizard({ error, steps }: WizardProps) {
     }
   }
 
-  const goTo = (step: string) => setStep(step)
+  const goTo = (step: string) => {
+    setStep(step)
+  }
 
   return (
     <>

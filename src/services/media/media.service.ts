@@ -1,4 +1,4 @@
-import { Cloudinary, CloudinaryImage } from '@cloudinary/url-gen'
+import { Cloudinary, type CloudinaryImage } from '@cloudinary/url-gen'
 import { quality } from '@cloudinary/url-gen/actions/delivery'
 
 import { clientEnv } from '~/config/client'
@@ -15,8 +15,8 @@ export const getCloudinaryImage = (image_id: string): CloudinaryImage => {
   return image
 }
 
-export const getCloudinaryVideo = (video_id: string, video_quality?: number) => {
-  const video = cld.video(video_id)
+export const getCloudinaryVideo = (videoId: string, videoQuality?: number) => {
+  const video = cld.video(videoId)
 
-  return video_quality ? video.delivery(quality(video_quality)) : video
+  return videoQuality ? video.delivery(quality(videoQuality)) : video
 }

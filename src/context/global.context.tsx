@@ -12,7 +12,9 @@ export const GlobalContext = React.createContext<GlobalProvider>({
 
 export const GlobalContextProvider = ({ children, ...value }: GlobalContextProviderProps) => {
   const [showSettings, setShowSettings] = React.useState(false)
-  const toggleSettings = () => setShowSettings(!showSettings)
+  const toggleSettings = () => {
+    setShowSettings(!showSettings)
+  }
   const providerValue = { ...value, toggleSettings, showSettings }
   return <GlobalContext.Provider value={providerValue}>{children}</GlobalContext.Provider>
 }
