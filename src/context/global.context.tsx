@@ -25,4 +25,4 @@ export interface GlobalContextProviderProps extends GlobalState {
   children: React.ReactNode
 }
 
-export type GlobalState = {}
+export interface GlobalState {}

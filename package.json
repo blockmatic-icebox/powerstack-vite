@@ -7,15 +7,13 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "format": "ts-standard --fix ./src",
-    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\" \"!src/graphql/generated\"",
     "lint": "eslint --fix --ignore-path .gitignore",
-    "graphql": "genql --sort --endpoint https://api.powerstack.xyz/v1/graphql --output ./graphql/generated"
+    "graphql": "genql --sort --endpoint https://api.powerstack.xyz/v1/graphql -H 'x-chaingraph-api-key: e33ac4f9-2a45-478a-95b4-ac4d1dc8f25b' --output ./src/graphql/generated"
   },
   "dependencies": {
     "@cloudinary/url-gen": "^1.9.1",
     "@genql/runtime": "^2.10.0",
-    "@typescript-eslint/parser": "^5.54.1",
     "clsx": "^1.2.1",
     "framer-motion": "^10.1.0",
     "graphql": "^16.6.0",
@@ -27,6 +25,7 @@
     "windstitch": "^0.3.0"
   },
   "devDependencies": {
+    "@typescript-eslint/parser": "^5.54.1",
     "@genql/cli": "^3.0.4",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "@types/lodash": "^4.14.191",

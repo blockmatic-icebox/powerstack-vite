@@ -22,6 +22,7 @@ export class FetchError extends Error {
   data: {
     message: string
   }
+
   constructor({
     message,
     response,
@@ -43,6 +44,6 @@ export class FetchError extends Error {
 
     this.name = 'FetchError'
     this.response = response
-    this.data = data ?? { message: message }
+    this.data = data ?? { message }
   }
 }

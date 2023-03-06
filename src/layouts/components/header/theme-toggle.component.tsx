@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import { Button } from "~/components/button";
+import { Button } from '~/components/button'
 
 export const ButtonThemeSwitcher = () => {
   // const { theme, setTheme } = useTheme();
@@ -18,4 +18,4 @@ export const ButtonThemeSwitcher = () => {
   //     )}
   //   </Button>
   // );
-};
+}

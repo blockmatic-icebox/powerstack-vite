@@ -1,11 +1,11 @@
-import { w } from "windstitch";
+import { w } from 'windstitch'
 
-import { cn } from "~/lib/styles";
+import { cn } from '~/lib/styles'
 
-import { ButtonProps } from "./button.type";
+import { ButtonProps } from './button.type'
 
 export function Button({ label, ...props }: ButtonProps) {
-  return <ButtonVariants {...props}>{label || props.children}</ButtonVariants>;
+  return <ButtonVariants {...props}>{label || props.children}</ButtonVariants>
 }
 
 export const ButtonVariants = w.button(
@@ -30,11 +30,11 @@ export const ButtonVariants = w.button(
       },
     },
     defaultVariants: {
-      size: "normal",
-      variant: "secondary",
-      border: "none",
+      size: 'normal',
+      variant: 'secondary',
+      border: 'none',
     },
   },
-);
+)
 
-ButtonVariants.displayName = "ButtonVariants";
+ButtonVariants.displayName = 'ButtonVariants'

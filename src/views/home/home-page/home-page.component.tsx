@@ -1,4 +1,4 @@
-import { Salute } from "../salute";
+import { Salute } from '../salute'
 
 export function HomePage() {
   return (
@@ -6,5 +6,5 @@ export function HomePage() {
       <h2>Home</h2>
       <Salute />
     </div>
-  );
+  )
 }

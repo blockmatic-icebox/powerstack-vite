@@ -1,11 +1,11 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom'
 
-import { RootLayout } from "~/layouts/root";
-import "~/styles/global.css";
+import { RootLayout } from '~/layouts/root'
+import '~/styles/global.css'
 
-import { AboutPage } from "./views/about/about-page";
-import { ErrorPage } from "./views/error/error-page";
-import { HomePage } from "./views/home/home-page";
+import { AboutPage } from './views/about/about-page'
+import { ErrorPage } from './views/error/error-page'
+import { HomePage } from './views/home/home-page'
 
 export function App() {
   return (
@@ -20,5 +20,5 @@ export function App() {
         <Route path="*" element={<ErrorPage />} />
       </Route>
     </Routes>
-  );
+  )
 }

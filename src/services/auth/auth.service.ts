@@ -14,7 +14,7 @@ export async function login(login_payload: CreateSessionParams) {
   })
   logger.log('🍪 cookie session created!')
 
-  if (error || !data) throw error || 'Unauthorized access.'
+  if (error != null || data == null) throw error != null || 'Unauthorized access.'
 
   return data
 }

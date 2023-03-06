@@ -1,9 +1,9 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React from 'react'
+import { Outlet } from 'react-router-dom'
 
-import { Footer } from "../components/footer";
-import { Header } from "../components/header";
-import { Main } from "../components/main";
+import { Footer } from '../components/footer'
+import { Header } from '../components/header'
+import { Main } from '../components/main'
 
 export function RootLayout() {
   return (
@@ -16,5 +16,5 @@ export function RootLayout() {
         <Footer />
       </div>
     </div>
-  );
+  )
 }
