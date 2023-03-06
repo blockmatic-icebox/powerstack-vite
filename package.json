@@ -9,20 +9,30 @@
     "preview": "vite preview",
     "format": "ts-standard --fix ./src",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
-    "lint": "eslint --fix --ignore-path .gitignore"
+    "lint": "eslint --fix --ignore-path .gitignore",
+    "graphql": "genql --sort --endpoint https://api.powerstack.xyz/v1/graphql --output ./graphql/generated"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^5.0.0",
+    "@cloudinary/url-gen": "^1.9.1",
+    "@genql/runtime": "^2.10.0",
+    "@typescript-eslint/parser": "^5.54.1",
+    "clsx": "^1.2.1",
     "framer-motion": "^10.1.0",
+    "graphql": "^16.6.0",
+    "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.2",
+    "tailwind-merge": "^1.10.0",
     "windstitch": "^0.3.0"
   },
   "devDependencies": {
+    "@genql/cli": "^3.0.4",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
-    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@types/lodash": "^4.14.191",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.35.0",
@@ -40,6 +50,6 @@
     "tailwindcss": "^3.2.7",
     "ts-standard": "^12.0.2",
     "typescript": "^4.9.5",
-    "vite": "^4.1.0"
+    "vite": "^4.1.4"
   }
 }

@@ -27,6 +27,7 @@ _ This is a work in progress._
 ## Tech Stack
 
 - React Vite [vitejs.dev](https://vitejs.dev/guide/)
+- React Router [remix-run/react-router](https://github.com/remix-run/react-router)
 - TailwindCSS [tailwindcss.com](https://tailwindcss.com)
 - Windstitch Component Variants [vinpac/windstitch](https://github.com/vinpac/windstitch)
 - Framer Motion [framer/motion](https://github.com/framer/motion)
