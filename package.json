@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "@typescript-eslint/parser": "^5.0.0",
+    "framer-motion": "^10.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "windstitch": "^0.3.0"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
