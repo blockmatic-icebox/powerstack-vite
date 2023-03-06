@@ -29,14 +29,14 @@ _ This is a work in progress._
 - React Vite [vitejs.dev](https://vitejs.dev/guide/)
 - TailwindCSS [tailwindcss.com](https://tailwindcss.com)
 - Windstitch Component Variants [vinpac/windstitch](https://github.com/vinpac/windstitch)
-- Conditional Classes [package/clsx](https://www.npmjs.com/package/clsx)
+- Framer Motion [framer/motion](https://github.com/framer/motion)
+- Windstitch Component Variants [vinpac/windstitch](https://github.com/vinpac/windstitch)
 - Ethers [docs.ethers.io](https://docs.ethers.io/v5)
 - Solana Web3 [solana-labs/solana-web3.js](https://github.com/solana-labs/solana-web3.js)
 - TweetNaCl.js [dchest/tweetnacl-js](https://github.com/dchest/tweetnacl-js)
 - Eosio Core [greymass/eosio-core](https://github.com/greymass/eosio-core)
 - Decimal.js [MikeMcl/decimal.js](https://github.com/MikeMcl/decimal.js)
 - GenQL GraphQL Query Composer [remorses/genql](https://github.com/remorses/genql)
-- Iron Session [vvo/iron-session](https://github.com/vvo/iron-session)
 - Lodash tools [lodash.com/docs](https://lodash.com/docs)
 - Zod validator [colinhacks/zod](https://github.com/colinhacks/zod)
 - React Hook Form [react-hook-form.com](https://react-hook-form.com/)
@@ -127,11 +127,7 @@ export function saySomething() {
 
 ```ts
 // services/account/account.service.ts
-export async function getAccounts({
-  account,
-  limit = 15,
-  offset = 0,
-}: GetAccountsParams) {
+export async function getAccounts({ account, limit = 15, offset = 0 }: GetAccountsParams) {
   const where = account
     ? {
         account: {
